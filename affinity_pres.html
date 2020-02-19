@@ -28,8 +28,21 @@
                   text-transform: none;
 			
           }
-		  .slides {
+		/* .slides {
 			width: 70vw !important;
+		} */
+		.reveal .slides {
+		height: 100%;
+		width: 70vw !important;
+		top: 0;
+		margin-top: 0;
+		}
+		.reveal .slides>section {
+		min-height: 90%;
+		}
+
+		.reveal .slides>section>section {
+		min-height: 100%;
 		}
 
 
@@ -82,9 +95,578 @@
 						</tr>
 					  </table>
 				</section>
-				<section data-background-transition="zoom">
+				<section data-background-transition="slide">
+					<section style=" font-size: 24px;" >
+						<div style="height: 500px; overflow-y:auto;">
+							<table style="width: 100%;">
+								<thead>
+								<tr style="text-align: right;">
+									<th></th>
+									<th>Allele</th>
+									<th>Source Protein</th>
+									<th>Peptide</th>
+									<th>Start Position</th>
+									<th>ann_ic50</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<th>0</th>
+									<td>HLA-B*18:01</td>
+									<td>MBP</td>
+									<td>DENPVVHFF</td>
+									<td>216</td>
+									<td>3.69</td>
+								</tr>
+								<tr>
+									<th>1</th>
+									<td>HLA-A*26:01</td>
+									<td>PLP</td>
+									<td>YVIYGTASF</td>
+									<td>70</td>
+									<td>4.11</td>
+								</tr>
+								<tr>
+									<th>2</th>
+									<td>HLA-A*02:01</td>
+									<td>PLP</td>
+									<td>FQMTFHLFI</td>
+									<td>233</td>
+									<td>5.99</td>
+								</tr>
+								<tr>
+									<th>3</th>
+									<td>HLA-A*02:01</td>
+									<td>PLP</td>
+									<td>FLYGALLLA</td>
+									<td>80</td>
+									<td>6.42</td>
+								</tr>
+								<tr>
+									<th>4</th>
+									<td>HLA-A*24:02</td>
+									<td>PLP</td>
+									<td>IYGTASFFF</td>
+									<td>72</td>
+									<td>6.78</td>
+								</tr>
+								<tr>
+									<th>5</th>
+									<td>HLA-A*02:01</td>
+									<td>MOG</td>
+									<td>FLLLLLLQV</td>
+									<td>16</td>
+									<td>8.84</td>
+								</tr>
+								<tr>
+									<th>6</th>
+									<td>HLA-A*02:01</td>
+									<td>OSP</td>
+									<td>LLLTVLPCI</td>
+									<td>98</td>
+									<td>9.17</td>
+								</tr>
+								<tr>
+									<th>7</th>
+									<td>HLA-A*02:01</td>
+									<td>OSP</td>
+									<td>ILLALCALV</td>
+									<td>128</td>
+									<td>10.59</td>
+								</tr>
+								<tr>
+									<th>8</th>
+									<td>HLA-B*18:01</td>
+									<td>MOG</td>
+									<td>DEGGFTCFF</td>
+									<td>121</td>
+									<td>11.32</td>
+								</tr>
+								<tr>
+									<th>9</th>
+									<td>HLA-A*02:01</td>
+									<td>MOG</td>
+									<td>VLLAVLPVL</td>
+									<td>157</td>
+									<td>11.78</td>
+								</tr>
+								<tr>
+									<th>10</th>
+									<td>HLA-A*02:01</td>
+									<td>OSP</td>
+									<td>LVATIWFPV</td>
+									<td>135</td>
+									<td>12.10</td>
+								</tr>
+								<tr>
+									<th>11</th>
+									<td>HLA-A*02:01</td>
+									<td>OSP</td>
+									<td>GLYHCKPLV</td>
+									<td>61</td>
+									<td>13.27</td>
+								</tr>
+								<tr>
+									<th>12</th>
+									<td>HLA-C*12:03</td>
+									<td>MOG</td>
+									<td>YRPPFSRVV</td>
+									<td>69</td>
+									<td>13.95</td>
+								</tr>
+								<tr>
+									<th>13</th>
+									<td>HLA-C*06:02</td>
+									<td>MOG</td>
+									<td>YRPPFSRVV</td>
+									<td>69</td>
+									<td>14.90</td>
+								</tr>
+								<tr>
+									<th>14</th>
+									<td>HLA-A*02:01</td>
+									<td>PLP</td>
+									<td>SLLTFMIAA</td>
+									<td>253</td>
+									<td>15.93</td>
+								</tr>
+								<tr>
+									<th>15</th>
+									<td>HLA-A*02:01</td>
+									<td>PLP</td>
+									<td>LLAEGFYTT</td>
+									<td>86</td>
+									<td>16.05</td>
+								</tr>
+								<tr>
+									<th>16</th>
+									<td>HLA-C*12:03</td>
+									<td>PLP</td>
+									<td>YVIYGTASF</td>
+									<td>70</td>
+									<td>19.01</td>
+								</tr>
+								<tr>
+									<th>17</th>
+									<td>HLA-A*26:01</td>
+									<td>OSP</td>
+									<td>QVVGFVTSF</td>
+									<td>7</td>
+									<td>21.14</td>
+								</tr>
+								<tr>
+									<th>18</th>
+									<td>HLA-A*01:01</td>
+									<td>PLP</td>
+									<td>GTASFFFLY</td>
+									<td>74</td>
+									<td>22.05</td>
+								</tr>
+								<tr>
+									<th>19</th>
+									<td>HLA-B*18:01</td>
+									<td>MOG</td>
+									<td>MELKVEDPF</td>
+									<td>140</td>
+									<td>22.67</td>
+								</tr>
+								<tr>
+									<th>20</th>
+									<td>HLA-A*26:01</td>
+									<td>PLP</td>
+									<td>YLINVIHAF</td>
+									<td>60</td>
+									<td>23.11</td>
+								</tr>
+								<tr>
+									<th>21</th>
+									<td>HLA-C*12:03</td>
+									<td>OSP</td>
+									<td>YAGWIGAVL</td>
+									<td>159</td>
+									<td>23.55</td>
+								</tr>
+								<tr>
+									<th>22</th>
+									<td>HLA-A*02:01</td>
+									<td>OSP</td>
+									<td>SLYAGWIGA</td>
+									<td>157</td>
+									<td>24.04</td>
+								</tr>
+								<tr>
+									<th>23</th>
+									<td>HLA-A*02:01</td>
+									<td>MOG</td>
+									<td>LLLQITVGL</td>
+									<td>165</td>
+									<td>24.09</td>
+								</tr>
+								<tr>
+									<th>24</th>
+									<td>HLA-A*02:01</td>
+									<td>MBP</td>
+									<td>SLSRFSWGA</td>
+									<td>244</td>
+									<td>24.45</td>
+								</tr>
+								<tr>
+									<th>25</th>
+									<td>HLA-B*18:01</td>
+									<td>PLP</td>
+									<td>YEYLINVIH</td>
+									<td>58</td>
+									<td>24.50</td>
+								</tr>
+								<tr>
+									<th>26</th>
+									<td>HLA-C*12:03</td>
+									<td>PLP</td>
+									<td>FACSAVPVY</td>
+									<td>167</td>
+									<td>25.99</td>
+								</tr>
+								<tr>
+									<th>27</th>
+									<td>HLA-A*02:01</td>
+									<td>PLP</td>
+									<td>YALTVVWLL</td>
+									<td>157</td>
+									<td>30.07</td>
+								</tr>
+								<tr>
+									<th>28</th>
+									<td>HLA-C*12:03</td>
+									<td>PLP</td>
+									<td>YLINVIHAF</td>
+									<td>60</td>
+									<td>35.01</td>
+								</tr>
+								<tr>
+									<th>29</th>
+									<td>HLA-A*02:01</td>
+									<td>OSP</td>
+									<td>MIAASVLGL</td>
+									<td>85</td>
+									<td>37.00</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section data-background-transition="slide" data-background-size="contain" data-background-image="./affinity_pres/Best_MHCI-Affinities.svg">
+					</section>
+					<section data-background-transition="slide">
+						<div  style=" overflow-x: scroll;">
+							<img class="stretch" src="./affinity_pres/MBP_HLAI-affinity.png" alt="">
+						</div>
+					</section>
+					<section data-background-transition="slide">
+						<div style="overflow-x: scroll;">
+							<img class="stretch" src="./affinity_pres/PLP_HLAI-affinity.png" alt="">
+						</div>
+					</section>
+					<section data-background-transition="slide">
+						<div style="overflow-x: scroll;">
+							<img class="stretch" src="./affinity_pres/MOG_HLAI-affinity.png" alt="">
+						</div>
+					</section>
+					<section data-background-transition="slide">
+						<div style="overflow-x: scroll;">
+							<img class="stretch" src="./affinity_pres/OSP_HLAI-affinity.png" alt="">
+						</div>
+					</section>
+					<section data-background-transition="slide">
+						<div style="overflow-x: scroll;">
+							<img class="stretch" src="./affinity_pres/MOBP_HLAI-affinity.png" alt="">
+						</div>
+					</section>
+				</section>
+				<section data-background-transition="slide">
 					<section style="font-size: 24px;" >
-						<table style="width: 100%;" >  <thead>    <tr style="text-align: right;">      <th></th>      <th>Allele</th>      <th>Source Protein</th>      <th>Peptide</th>      <th>Start Position</th>      <th>ann_ic50</th>    </tr>  </thead>  <tbody>    <tr>      <th>0</th>      <td>HLA-B*18:01</td>      <td>MBP</td>      <td>DENPVVHFF</td>      <td>216</td>      <td>3.69</td>    </tr>    <tr>      <th>1</th>      <td>HLA-A*26:01</td>      <td>PLP</td>      <td>YVIYGTASF</td>      <td>70</td>      <td>4.11</td>    </tr>    <tr>      <th>2</th>      <td>HLA-A*02:01</td>      <td>PLP</td>      <td>FQMTFHLFI</td>      <td>233</td>      <td>5.99</td>    </tr>    <tr>      <th>3</th>      <td>HLA-A*02:01</td>      <td>PLP</td>      <td>FLYGALLLA</td>      <td>80</td>      <td>6.42</td>    </tr>    <tr>      <th>4</th>      <td>HLA-A*24:02</td>      <td>PLP</td>      <td>IYGTASFFF</td>      <td>72</td>      <td>6.78</td>    </tr>    <tr>      <th>5</th>      <td>HLA-A*02:01</td>      <td>MOG</td>      <td>FLLLLLLQV</td>      <td>16</td>      <td>8.84</td>    </tr>    <tr>      <th>6</th>      <td>HLA-A*02:01</td>      <td>OSP</td>      <td>LLLTVLPCI</td>      <td>98</td>      <td>9.17</td>    </tr>    <tr>      <th>7</th>      <td>HLA-A*02:01</td>      <td>OSP</td>      <td>ILLALCALV</td>      <td>128</td>      <td>10.59</td>    </tr>    <tr>      <th>8</th>      <td>HLA-B*18:01</td>      <td>MOG</td>      <td>DEGGFTCFF</td>      <td>121</td>      <td>11.32</td>    </tr>    <tr>      <th>9</th>      <td>HLA-A*02:01</td>      <td>MOG</td>      <td>VLLAVLPVL</td>      <td>157</td>      <td>11.78</td>    </tr>  </tbody></table>
+						<div style="height: 500px; overflow-y:auto;">
+							<table style="width: 100%;">
+								<thead>
+								  <tr style="text-align: right;">
+									<th></th>
+									<th>Allele</th>
+									<th>Source Protein</th>
+									<th>Peptide</th>
+									<th>Start Position</th>
+									<th>Score</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<th>0</th>
+									<td>HLA-DRB1*11:04</td>
+									<td>MOG</td>
+									<td>GVLVLLAVLPVLLLQ</td>
+									<td>154</td>
+									<td>0.09</td>
+								  </tr>
+								  <tr>
+									<th>1</th>
+									<td>HLA-DRB1*11:04</td>
+									<td>MOG</td>
+									<td>LVLLAVLPVLLLQIT</td>
+									<td>156</td>
+									<td>0.09</td>
+								  </tr>
+								  <tr>
+									<th>2</th>
+									<td>HLA-DRB1*11:04</td>
+									<td>MOG</td>
+									<td>PGVLVLLAVLPVLLL</td>
+									<td>153</td>
+									<td>0.09</td>
+								  </tr>
+								  <tr>
+									<th>3</th>
+									<td>HLA-DRB1*11:04</td>
+									<td>MOG</td>
+									<td>WVSPGVLVLLAVLPV</td>
+									<td>150</td>
+									<td>0.09</td>
+								  </tr>
+								  <tr>
+									<th>4</th>
+									<td>HLA-DRB1*11:04</td>
+									<td>MOG</td>
+									<td>VLVLLAVLPVLLLQI</td>
+									<td>155</td>
+									<td>0.09</td>
+								  </tr>
+								  <tr>
+									<th>5</th>
+									<td>HLA-DRB1*11:04</td>
+									<td>MOG</td>
+									<td>SPGVLVLLAVLPVLL</td>
+									<td>152</td>
+									<td>0.09</td>
+								  </tr>
+								  <tr>
+									<th>6</th>
+									<td>HLA-DRB1*11:04</td>
+									<td>MOG</td>
+									<td>VSPGVLVLLAVLPVL</td>
+									<td>151</td>
+									<td>0.09</td>
+								  </tr>
+								  <tr>
+									<th>7</th>
+									<td>HLA-DRB1*11:04</td>
+									<td>OSP</td>
+									<td>LLLLTVLPCIRMGQE</td>
+									<td>97</td>
+									<td>0.19</td>
+								  </tr>
+								  <tr>
+									<th>8</th>
+									<td>HLA-DRB1*11:04</td>
+									<td>OSP</td>
+									<td>ILLLLTVLPCIRMGQ</td>
+									<td>96</td>
+									<td>0.19</td>
+								  </tr>
+								  <tr>
+									<th>9</th>
+									<td>HLA-DRB1*11:04</td>
+									<td>OSP</td>
+									<td>AILLLLTVLPCIRMG</td>
+									<td>95</td>
+									<td>0.19</td>
+								  </tr>
+								  <tr>
+									<th>10</th>
+									<td>HLA-DRB1*11:04</td>
+									<td>OSP</td>
+									<td>LGLPAILLLLTVLPC</td>
+									<td>91</td>
+									<td>0.19</td>
+								  </tr>
+								  <tr>
+									<th>11</th>
+									<td>HLA-DRB1*11:04</td>
+									<td>OSP</td>
+									<td>PAILLLLTVLPCIRM</td>
+									<td>94</td>
+									<td>0.19</td>
+								  </tr>
+								  <tr>
+									<th>12</th>
+									<td>HLA-DRB1*11:04</td>
+									<td>OSP</td>
+									<td>LPAILLLLTVLPCIR</td>
+									<td>93</td>
+									<td>0.19</td>
+								  </tr>
+								  <tr>
+									<th>13</th>
+									<td>HLA-DRB1*11:04</td>
+									<td>OSP</td>
+									<td>GLPAILLLLTVLPCI</td>
+									<td>92</td>
+									<td>0.19</td>
+								  </tr>
+								  <tr>
+									<th>14</th>
+									<td>HLA-DRB1*11:04</td>
+									<td>OSP</td>
+									<td>LLILLALCALVATIW</td>
+									<td>126</td>
+									<td>0.50</td>
+								  </tr>
+								  <tr>
+									<th>15</th>
+									<td>HLA-DRB1*11:04</td>
+									<td>OSP</td>
+									<td>GVLLILLALCALVAT</td>
+									<td>124</td>
+									<td>0.50</td>
+								  </tr>
+								  <tr>
+									<th>16</th>
+									<td>HLA-DRB1*11:04</td>
+									<td>OSP</td>
+									<td>AGVLLILLALCALVA</td>
+									<td>123</td>
+									<td>0.50</td>
+								  </tr>
+								  <tr>
+									<th>17</th>
+									<td>HLA-DRB1*11:04</td>
+									<td>OSP</td>
+									<td>LAGVLLILLALCALV</td>
+									<td>122</td>
+									<td>0.50</td>
+								  </tr>
+								  <tr>
+									<th>18</th>
+									<td>HLA-DRB1*11:04</td>
+									<td>OSP</td>
+									<td>VLLILLALCALVATI</td>
+									<td>125</td>
+									<td>0.50</td>
+								  </tr>
+								  <tr>
+									<th>19</th>
+									<td>HLA-DRB1*11:04</td>
+									<td>OSP</td>
+									<td>QLAGVLLILLALCAL</td>
+									<td>121</td>
+									<td>0.50</td>
+								  </tr>
+								  <tr>
+									<th>20</th>
+									<td>HLA-DRB1*11:04</td>
+									<td>OSP</td>
+									<td>AQLAGVLLILLALCA</td>
+									<td>120</td>
+									<td>0.50</td>
+								  </tr>
+								  <tr>
+									<th>21</th>
+									<td>HLA-DRB1*15:01</td>
+									<td>MBP</td>
+									<td>PVVHFFKNIVTPRTP</td>
+									<td>219</td>
+									<td>0.63</td>
+								  </tr>
+								  <tr>
+									<th>22</th>
+									<td>HLA-DRB1*15:01</td>
+									<td>MBP</td>
+									<td>NPVVHFFKNIVTPRT</td>
+									<td>218</td>
+									<td>0.63</td>
+								  </tr>
+								  <tr>
+									<th>23</th>
+									<td>HLA-DRB1*15:01</td>
+									<td>MBP</td>
+									<td>ENPVVHFFKNIVTPR</td>
+									<td>217</td>
+									<td>0.63</td>
+								  </tr>
+								  <tr>
+									<th>24</th>
+									<td>HLA-DRB1*15:01</td>
+									<td>MBP</td>
+									<td>DENPVVHFFKNIVTP</td>
+									<td>216</td>
+									<td>0.63</td>
+								  </tr>
+								  <tr>
+									<th>25</th>
+									<td>HLA-DRB1*15:01</td>
+									<td>MBP</td>
+									<td>QDENPVVHFFKNIVT</td>
+									<td>215</td>
+									<td>0.63</td>
+								  </tr>
+								  <tr>
+									<th>26</th>
+									<td>HLA-DRB1*15:01</td>
+									<td>MBP</td>
+									<td>VVHFFKNIVTPRTPP</td>
+									<td>220</td>
+									<td>0.88</td>
+								  </tr>
+								  <tr>
+									<th>27</th>
+									<td>HLA-DRB1*15:01</td>
+									<td>OSP</td>
+									<td>LVDILILPGYVQACR</td>
+									<td>68</td>
+									<td>0.94</td>
+								  </tr>
+								  <tr>
+									<th>28</th>
+									<td>HLA-DRB1*07:01</td>
+									<td>PLP</td>
+									<td>HLFIAAFVGAAATLV</td>
+									<td>238</td>
+									<td>0.95</td>
+								  </tr>
+								  <tr>
+									<th>29</th>
+									<td>HLA-DRB1*07:01</td>
+									<td>PLP</td>
+									<td>IAAFVGAAATLVSLL</td>
+									<td>241</td>
+									<td>0.95</td>
+								  </tr>
+								</tbody>
+							  </table>
+						</div>					
+					</section>
+					<section data-background-transition="slide" data-background-size="contain" data-background-image="./affinity_pres/Best_MHCII-Affinities.svg">
+					</section>
+					<section data-background-transition="slide">
+						<div  style=" overflow-x: scroll;">
+							<img class="stretch" src="./affinity_pres/MBP_HLAII-affinity.png" alt="">
+						</div>
+					</section>
+					<section data-background-transition="slide">
+						<div style="overflow-x: scroll;">
+							<img class="stretch" src="./affinity_pres/PLP_HLAII-affinity.png" alt="">
+						</div>
+					</section>
+					<section data-background-transition="slide">
+						<div style="overflow-x: scroll;">
+							<img class="stretch" src="./affinity_pres/MOG_HLAII-affinity.png" alt="">
+						</div>
+					</section>
+					<section data-background-transition="slide">
+						<div style="overflow-x: scroll;">
+							<img class="stretch" src="./affinity_pres/OSP_HLAII-affinity.png" alt="">
+						</div>
+					</section>
+					<section data-background-transition="slide">
+						<div style="overflow-x: scroll;">
+							<img class="stretch" src="./affinity_pres/MOBP_HLAII-affinity.png" alt="">
+						</div>
 					</section>
 					<section style="font-size: 18px;" >
 						<table style="width: 100%;"> 
@@ -226,46 +808,8 @@
 							</tbody>
 						  </table>
 					</section>
-					<section data-background-transition="slide">
-						<div style="height: 100%;width: 100%; overflow-x: scroll;">
-							<img class="stretch" src="./affinity_pres/MBP_HLAI-affinity.png" alt="">
-						</div>
-					</section>
-					<section data-background-transition="slide">
-						<div style="height: 100%;width: 100%; overflow-x: scroll;">
-							<img class="stretch" src="./affinity_pres/PLP_HLAI-affinity.png" alt="">
-						</div>
-					</section>
-					<section data-background-transition="slide">
-						<div style="height: 100%;width: 100%; overflow-x: scroll;">
-							<img class="stretch" src="./affinity_pres/MOG_HLAI-affinity.png" alt="">
-						</div>
-					</section>
-					<section data-background-transition="slide">
-						<div style="height: 100%;width: 100%; overflow-x: scroll;">
-							<img class="stretch" src="./affinity_pres/OSP_HLAI-affinity.png" alt="">
-						</div>
-					</section>
-					<section data-background-transition="slide">
-						<div style="height: 100%;width: 100%; overflow-x: scroll;">
-							<img class="stretch" src="./affinity_pres/MOBP_HLAI-affinity.png" alt="">
-						</div>
-					</section>
-					<section data-background-transition="slide" data-background-size="contain" data-background-image="./affinity_pres/Best_MHCI-Affinities.svg">
-					</section>
-					<section data-background-transition="slide" data-background-size="contain" data-background-image="./affinity_pres/Best_MHCII-Affinities.svg">
-					</section>
-					<section data-background-transition="slide" data-background-size="contain" data-background-image="./affinity_pres/MBP_HLA-DRB1*15:01_affinity_iedb.svg">
-					</section>
-					<section data-background-transition="slide" data-background-size="contain" data-background-image="./affinity_pres/PLP_HLA-DRB1*15:01_affinity_iedb.svg">
-					</section>
-					<section data-background-transition="slide" data-background-size="contain" data-background-image="./affinity_pres/MOG_HLA-DRB1*15:01_affinity_iedb.svg">
-					</section>
-					<section data-background-transition="slide" data-background-size="contain" data-background-image="./affinity_pres/OSP_HLA-DRB1*15:01_affinity_iedb.svg">
-					</section>
-					<section data-background-transition="slide" data-background-size="contain" data-background-image="./affinity_pres/MOBP_HLA-DRB1*15:01_affinity_iedb.svg">
-					</section>
 				</section>
+				
 				<section data-transition="zoom-in slide-out">
 					<ul>
 						<li>HLA I and II affinity Predictors</li>
@@ -313,10 +857,6 @@
 				</section>
 				<section data-background-transition="slide" data-background-size="contain" data-background-image="./affinity_pres/as.svg">
 				</section>
-				<!-- <section> -->
-					<!-- <img style="height: 60vh; width: 66vw; margin-top: 0px; margin-bottom: 100px;" src="./affinity_pres/as.svg" alt=""> -->
-					<!-- <canvas style="width: 100%;margin: 0px 0px;background-color: aliceblue;" ></canvas> -->
-				<!-- </section> -->
 
 			</div>
 		</div>
